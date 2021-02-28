@@ -1,0 +1,157 @@
+
+
+----------==========----------==========----------==========----------
+
+
+"Eat Your Own Catfood."
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2021/02/28
+
+
+BUGFIX
+
+
+	win32/win_smallbutton.c
+		Dark Mode : background color
+			OLD : not sync'ed
+			NEW : fixed
+	win32/win_txtbox/00_helper.c
+		n_win_txtbox_frame() : when alpha value has not zero
+			OLD : black-out
+			NEW : fixed
+
+	All
+		TxtBox : color scheme
+			OLD : misbehave in some cases
+			NEW : fixed
+
+
+NEW_FEATURE
+
+
+	game/chara.c
+		n_game_chara_draw_simple()
+			NEW : a little faster version
+		n_game_chara_draw()
+			OLD : n_game_chara_draw_full()
+			NEW : n_game_chara_draw_simple()
+
+	neutral/bmp/color.c
+		composite_pixel()
+			NEW : multi-threaded cache available
+			[!] : a few percent faster
+
+	project/cardgenerator/cardgenerator.c
+		darkmode
+			NEW : less bright color
+
+	Wheel Axl
+		engine
+			NEW : re-tuned
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2021/02/20
+
+
+BUGFIX
+
+
+	Nonnon Paint
+		Multi-Layer : Grabber : Pen Mode : Basic Filters
+			OLD : selected area only
+			NEW : all layers
+		Multi-Layer : Canvas : Layer Name
+			OLD : not sync in some cases
+			NEW : fixed
+			[!] : menu/middle button click on TxtBox on a layer window
+		Multi-Layer : Loader : when "Whole Grab" is ON
+			OLD : checked but OFF
+			NEW : fixed
+			[x] : BUGFIX @ 2021/02/10
+
+
+NEW_FEATURE
+
+
+	win32/win_smallbutton.c
+		high contrast
+			OLD : neon colors
+			NEW : gray
+	win32/win_txtbox.c
+		.style_option : N_WIN_TXTBOX_OPTION_NO_DELAYEDFOCUS
+			OLD : always on
+			NEW : no delayed focus
+
+	Marie
+		Drop Here
+			NEW : themed
+	Nonnon Paint
+		source code
+			OLD : n_paint_layer_grabber_onoff()
+			NEW : n_paint_layer_grabber_check_enable()
+			[?] : for easier to read
+			[!] : this module means "gray or not", not "checked or not"
+	Wheel Axl
+		engine
+			NEW : re-tuned
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2021/02/10
+
+
+BUGFIX
+
+
+	win32/win_txtbox.c
+		KEEPSEL : when margin is double-clicked
+			OLD : input to a selected item
+			NEW : fixed
+			[!] : Nonnon Paint's layer window
+
+	Nonnon Paint
+		Multi-Layer : Whole Grab : Filters
+			OLD : a scroll thumb is moved
+			NEW : fixed
+		Multi-Layer : Pen : Fill : when a new file is not layered
+			OLD : crash
+			NEW : fixed
+
+
+NEW_FEATURE
+
+
+	Nonnon Paint
+		Resizer : Color Option : Contour
+			NEW : auto-contour helper
+			[!] : there is some usage, see readme
+	OrangeCat
+		Item View : New Window
+			NEW : multiple items available
+		Menu : Explorer
+			NEW : multiple items available
+	Wheel Axl
+		jitter prevention
+			NEW : re-tuned
+
+
+----------==========----------==========----------==========----------
+
