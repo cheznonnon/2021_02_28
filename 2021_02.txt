@@ -12,6 +12,41 @@
 Change Log
 
 
+2021/02/28 #1 : 2021/03/02
+
+
+BUGFIX
+
+
+	Nonnon Paint
+		key bindings : Delete
+			OLD : gray canvas : inaccurate
+			NEW : clear
+			[x] : NEW_FEATURE @ 2020/05/30
+		Grabber : Ctrl+A
+			OLD : not working
+			NEW : fixed
+			[!] : Ctrl2Drag causes
+
+
+NEW_FEATURE
+
+
+	Nonnon Paint
+		Ctrl2Drag
+			NEW : removed
+			[?] : conflict will occur
+		Grabber : Ctrl + Arrow
+			NEW : removed
+			[?] : not working
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
 2021/02/28
 
 
